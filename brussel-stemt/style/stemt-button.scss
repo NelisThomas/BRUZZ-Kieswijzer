@@ -1,0 +1,63 @@
+.stemt-btn-wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.stemt-btn {
+    height: 70px;
+    margin: 5px;
+    box-sizing: border-box;
+
+    &__image {
+        margin: auto;
+        width: 70px;
+        height: 70px;
+    }
+
+    &--primary {
+        padding: 25px 80px;
+        margin-top: 70px;
+        background-color: $bruzz-bluegreen;
+    }
+
+    &--ghost {
+        background-color: transparent;
+        border: 1px solid $ui-border;
+
+        &:hover,
+        &:focus {
+            border: 1px solid darken($ui-border, 30%);
+        }
+
+        &.is-selected {
+            border: 3px solid $bruzz-bluegreen;
+        }
+    }
+
+    &--small {
+        width: calc(100% / 2 - 20px);
+        padding: 0;
+
+        @media (min-width: 780px) {
+            width: 120px;
+        }
+    }
+
+    &--big {
+        width: calc(100% - 20px);
+        font-size: 16px;
+        font-weight: 800;
+
+        @media (min-width: 780px) {
+            width: calc(100% / 2 - 20px);
+            font-size: 18px;
+
+        }
+    }
+
+    &.is-disabled {
+        opacity: .5;
+    }
+}

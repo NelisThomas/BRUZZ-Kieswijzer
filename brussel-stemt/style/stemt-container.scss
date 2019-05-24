@@ -1,0 +1,25 @@
+.container {
+    &.is-stemt {
+        text-align: center;
+
+        &.container--horizontal {
+            max-width: 900px;
+        }
+
+        .container__title {
+            font-size: 60px;
+        }
+    }
+}
+
+.has-distance {
+    margin: 12.5px auto;
+}
+
+.has-top-distance {
+    margin-top: 50px;
+}
+
+.has-bottom-distance {
+    margin-bottom: 25px;
+}
